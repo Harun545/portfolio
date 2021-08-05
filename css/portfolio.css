@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+}
+.doted{
+    border: dotted 5px white;
+    border-top: none;
+    margin: 15px auto;
+    width: 60px;
+}
+body{
+    background-color: rgb(14, 55, 102);
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    text-align: center;
+}
+.nav-logo img{
+    height: 57px;
+    width: 60px;
+}
+.color{
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.nav-heading{
+    color: white;
+    text-align: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.navbar-menu{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-menu a{
+    background-color: rgb(65, 18, 92);
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px 0 ;
+}
+
+.navbar-menu a:hover{
+    background-color: rgb(123, 12, 156);
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* For mobile */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Animation */
+.nav-logo img{
+    animation-name: picture;
+    transition: .01s;
+    /* border-bottom: 5px solid black;
+    border-radius: 80px; */
+    animation-duration: .01s;
+    animation-iteration-count: infinite;
+}
+@keyframes picture {
+    0%{
+        transform: rotate(10deg);
+        /* border: 2px solid rgb(107, 52, 100); */
+    }
+    10%{
+        transform: rotate(60deg);
+        /* border: 2px solid rgb(11, 185, 190); */
+    }
+    30%{
+        transform: rotate(120deg);
+        /* border: 2px solid rgb(60, 28, 136); */
+    }
+    50%{
+        transform: rotate(180deg);
+        /* border: 2px solid rgb(151, 153, 40); */
+    }
+    70%{
+        transform: rotate(240deg);
+        /* border: 2px solid rgb(128, 47, 47); */
+    }
+    90%{
+        /* transform: rotate(300deg); */
+        /* border: 2px solid rgb(245, 0, 0); */
+    }
+    100%{
+        transform: rotate(360deg);
+        /* border: 2px solid rgb(245, 0, 0); */
+    }
+}
+/* Animation end */
+/* navbar end */
+.pro-pic{
+    height: 57px;
+    width: 60px;
+    position: absolute;
+    right: 15px;
+    transition: 2s;
+}
+.pro-pic:hover{
+    transform: rotate(360deg) scale(1.01);
+}
+.profile{
+    text-align: center;
+    color: white;  
+    position: relative;
+}
+.profile::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* profile end */
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.about-me{
+    width: 80%;
+    background-color: rgb(10, 69, 146);
+    padding: 1% 7%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+.my-img img{
+    height: 110px;
+    width: 100px;
+    border: dotted 1.5px;
+    border-radius: 100%;
+}
+.details p{
+    text-align: center;
+}
+
+
+.about-me::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn{
+    background-color: rgb(3, 23, 78);
+    color: rgb(255, 255, 255);
+    padding: 4px 76x;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+}
+/* amout-me end */
+.profetions{
+    padding: 2% 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.profetions .card{
+    margin-top: 20px;
+}
+.card{
+    background-color: rgb(10, 69, 146);
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
+    margin: auto;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    text-align: center;
+    margin: 2px;
+    height: 75px;
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.card-h{
+    text-align: center;
+
+}
+
+
+.profetions::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.card, p{
+    color: rgb(255, 255, 255);
+}
+/* skill-container */
+
+.skill-container{
+    padding-right: 45px;
+}
+.skill-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+}
+.skill-container li::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    top: calc(100% + 5px);
+    border-radius: 100px;
+}
+
+.skill-container li::after{
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    top: calc(100% + 5px);
+    border-radius: 100px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+.skill-container li.h::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+.skill-container li.i::after{
+    animation-name: i;
+}
+@keyframes i {
+    to{
+        width: 70%;
+    }
+}
+
+.skill-container li.j::after{
+    animation-name: j;
+}
+@keyframes j {
+    to{
+        width: 80%;
+    }
+}
+.skill-container li.k::after{
+    animation-name: k;
+}
+@keyframes k {
+    to{
+        width: 60%;
+    }
+}
+
+.skill-container li.l::after{
+    animation-name: l;
+}
+@keyframes l {
+    to{
+        width: 90%;
+    }
+}
+
+.skill-container li.m::after{
+    animation-name: m;
+}
+@keyframes m {
+    to{
+        width: 80%;
+    }
+}
+
+.skill-container li.n::after{
+    animation-name: n;
+}
+@keyframes n {
+    to{
+        width: 65%;
+    }
+}
+
+.skill-container li.o::after{
+    animation-name: o;
+}
+@keyframes o {
+    to{
+        width: 50%;
+    }
+}
+
+/* Skill end */
+
+.achivement{
+    color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 10%;
+}
+
+.contact{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.name-email{
+    height: 25px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+.name-email:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.name h4{
+    margin: 1px;
+    font-size: 1.1rem;
+}
+.email h4{
+    font-size: 1.1rem;
+    margin: 1px;
+}
+#t-area{
+    width: 60%;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+.area{
+    margin-top: 10px;
+    
+}
+#t-area:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.btn1{
+    margin-top: 15px;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-bottom: 5px solid black;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+.btn1:hover{
+    border-top: 5px solid black;
+    border-bottom: none;
+}
+/* end contact me */
+.icon{
+    display: flex;
+    justify-content: center;
+    
+}
+.left{
+    margin: 20px 15%;
+}
+.left li{
+    list-style: none;
+    text-align: center;
+    transition: 3s;
+}
+.left li img{
+    height: 55px;
+}
+.left li img:hover{
+    transform: scale(1.3) rotate(10deg);
+}
+.right{
+    list-style: none;
+    text-align: center;
+    margin: 20px 15%;
+}
+.right li{
+    transition: 3s;
+}
+.right li img{
+    height: 55px;
+}
+.right li img:hover{
+    transform: scale(1.3) rotate(10deg);
+}
+/* end media */
+.CR{
+    text-align: center;
+}

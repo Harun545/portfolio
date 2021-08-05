@@ -1,0 +1,153 @@
+body{
+    background-color: rgb(25, 121, 108);
+}
+        /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.nav-logo{
+    text-align: left;
+    padding: 10px;
+}
+.nav-logo img{
+    animation-name: picture;
+    transition: .01s;
+    /* border-bottom: 5px solid black;
+    border-radius: 80px; */
+    animation-duration: .01s;
+    animation-iteration-count: infinite;
+}
+.nav-logo img:hover{
+    transform: scale(1.2);
+    animation-name: a;
+}
+@keyframes picture {
+    0%{
+        transform: rotate(10deg);
+        /* border: 2px solid rgb(107, 52, 100); */
+    }
+    10%{
+        transform: rotate(60deg);
+        /* border: 2px solid rgb(11, 185, 190); */
+    }
+    30%{
+        transform: rotate(120deg);
+        /* border: 2px solid rgb(60, 28, 136); */
+    }
+    50%{
+        transform: rotate(180deg);
+        /* border: 2px solid rgb(151, 153, 40); */
+    }
+    70%{
+        transform: rotate(240deg);
+        /* border: 2px solid rgb(128, 47, 47); */
+    }
+    90%{
+        /* transform: rotate(300deg); */
+        /* border: 2px solid rgb(245, 0, 0); */
+    }
+    100%{
+        transform: rotate(360deg);
+        /* border: 2px solid rgb(245, 0, 0); */
+    }
+}
+.nav-heading h1{
+    text-align: right;
+    margin: 3px;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    margin: 1% 2%;
+    padding: 3px 8px;
+    background-color: transparent;
+}
+.navbar-menu a:hover{
+    background-color: turquoise;
+    color: #000;
+    transform: scale(1.1);
+    transition: 1s;
+    font-size: 1.1rem;
+}
+/* navbar end */
+.pro-pic{
+    height: 100px;
+    width: 90px;
+    position: absolute;
+    margin: 0 10px;
+}
+.clear-div{
+    clear: both;
+}
+/* profile end */
+.about-me{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 70%;
+    background-color: rgb(7, 96, 99);
+}
+.about-me img{
+    margin-top: 100px;
+    height: 200px;
+    width: 190px;
+}
+.details p{
+    text-align: left;
+}
+.btn{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 1.01rem;
+    border: none;
+    border-top: 5px solid black;
+    margin-left: -65px;
+    margin-top: 20px;
+}
+.btn:hover{
+    border-bottom: 5px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: none;
+}
+/* about me end  */
+.profetions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.card{
+    width: 90%;
+    margin-bottom: 50px;
+    background-color: rgb(7, 96, 99);
+}
+.card, p{
+    color: rgb(255, 255, 255);
+}
+/* skill */
+.skill-container li{
+    margin: 18px 0px;
+}
+/* end */
+.contact-ach{
+    display: flex;
+}
+.achivement{
+    padding: 0;
+}
